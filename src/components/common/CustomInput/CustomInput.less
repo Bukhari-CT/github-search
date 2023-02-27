@@ -1,0 +1,108 @@
+.textInputPlaceholder {
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  left: 18px;
+  color: #B3BBD4;
+  font-size: 14px;
+  font-weight: 400;
+  background: white;
+  padding-left: 8px;
+  padding-right: 15px;
+  bottom: 46px;
+}
+
+.textAreaPlaceholder {
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  left: 18px;
+  color: #B3BBD4;
+  font-size: 14px;
+  font-weight: 400;
+  background: white;
+  padding-left: 8px;
+  padding-right: 15px;
+  top: -12px;
+}
+
+.ant-form-item-with-help .ant-form-item-explain {
+  z-index: 101;
+  font-size: 12px;
+}
+
+@media (min-width: 350px) {
+  .anticon-calendar {
+    color: #3b68ff !important;
+  }
+
+  .textInputStyle {
+    height: 58px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #d9d9d9;
+    padding-left: 22px;
+
+    .ant-input-prefix {
+      .ant-select-selector {
+        background-color: transparent !important;
+        border: none;
+      }
+    }
+
+    .ant-input-suffix {
+      .ant-input-password-icon {
+        color: #0aa4b4;
+      }
+    }
+  }
+}
+
+.textAreaStyle {
+  padding-top: 15px;
+}
+
+.mobileInput {
+  .ant-input-prefix {
+    width: 40px;
+  }
+}
+
+.mobilePrefix {
+  .ant-select-selection-item {
+    padding-top: 1px !important;
+    padding-left: 10px !important;
+    color: #B3BBD4;
+  }
+
+  .ant-select-arrow {
+    display: none;
+  }
+}
+
+.textInputPlaceholderFocused {
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  left: 18px;
+  color: #B3BBD4;
+  font-size: 12px;
+  font-weight: 400;
+  transform: translate(5px, 3px) scale(1);
+}
+
+@media (max-width: 350px) {
+  .textInputStyle {
+    height: 58px;
+    max-width: 280px;
+    border-radius: 15px;
+    border: 1px solid #d9d9d9;
+    padding-left: 22px;
+
+    .ant-input-suffix {
+      .ant-input-password-icon {
+        color: #3b68ff;
+      }
+    }
+  }
+}
