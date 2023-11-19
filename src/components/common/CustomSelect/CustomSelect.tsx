@@ -19,7 +19,16 @@ interface Props {
 }
 
 const CustomSelect: FC<Props> = (Props) => {
-  const { label, onChange, disabled, selected, fieldIndex, onClick, onSelect, selectOptions = [] } = Props;
+  const {
+    label,
+    onChange,
+    disabled,
+    selected,
+    fieldIndex,
+    onClick,
+    onSelect,
+    selectOptions = [],
+  } = Props;
   return (
     <div style={{ position: "relative" }}>
       <Text className="textInputPlaceholder">{label}</Text>
@@ -38,7 +47,12 @@ const CustomSelect: FC<Props> = (Props) => {
         {selectOptions &&
           selectOptions?.map((option: any, index: any) => {
             return (
-              <Option disabled={disabled} value={option.value} name={fieldIndex} key={`${selectOptions[index].key}`}>
+              <Option
+                disabled={disabled}
+                value={option.value}
+                name={fieldIndex}
+                key={`${selectOptions[index].key}`}
+              >
                 {option.label}
               </Option>
             );

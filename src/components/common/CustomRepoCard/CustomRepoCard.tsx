@@ -33,7 +33,8 @@ const CustomRepoCard: FC<Props> = (Props) => {
             <br />
             {repo.description && (
               <>
-                <Text strong>Repo Description</Text> <Text>{repo.description}</Text>
+                <Text strong>Repo Description</Text>{" "}
+                <Text>{repo.description}</Text>
               </>
             )}
           </>

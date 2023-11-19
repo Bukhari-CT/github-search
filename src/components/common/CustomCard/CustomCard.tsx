@@ -18,7 +18,15 @@ const CustomCard: FC<Props> = (Props) => {
       actions={[<GithubOutlined key="url" />, <LinkOutlined key="ellipsis" />]}
     >
       <Meta
-        avatar={<Avatar src={type === REPOSITORIES ? result.owner.avatar_url : result.avatar_url} />}
+        avatar={
+          <Avatar
+            src={
+              type === REPOSITORIES
+                ? result.owner.avatar_url
+                : result.avatar_url
+            }
+          />
+        }
         title={type === REPOSITORIES ? result.owner?.login : result?.login}
         description={
           type === REPOSITORIES ? (

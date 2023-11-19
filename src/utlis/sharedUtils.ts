@@ -1,5 +1,5 @@
-import {API_BASE_URL, SEARCH,} from './urls'
+import { API_BASE_URL, SEARCH } from "./urls";
 
 export const createGithubSearchUrl = (url: string) => {
-  return `${API_BASE_URL}${SEARCH}${url}`
-}
+  return `${API_BASE_URL}${SEARCH}${url}`;
+};

@@ -14,7 +14,9 @@ import { useFetch } from "../CustomHooks/useFetch";
 import { createGithubSearchUrl } from "../utlis/sharedUtils";
 const HomeContainer = () => {
   const [inputRef] = useForm();
-  const { searchingData, setSearchingTerms } = useSearchingFilter(searchingFilterInitialValues);
+  const { searchingData, setSearchingTerms } = useSearchingFilter(
+    searchingFilterInitialValues
+  );
   const { fetchDataWithParams, isLoading } = useFetch();
   const [userOrRepo, setUserOrRepo] = useState<string>(USERS);
   const [searchResult, setSearchResult] = useState<any>([]);
