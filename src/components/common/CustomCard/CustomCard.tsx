@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Typography, Card, Avatar } from "antd";
-import { GithubOutlined, LinkOutlined } from "@ant-design/icons";
+// import { GithubOutlined, LinkOutlined } from "@ant-design/icons";
 import { REPOSITORIES } from "../../../utlis/constants";
 
 const { Text } = Typography;
@@ -9,13 +9,13 @@ interface Props {
   result?: any;
   type?: string;
 }
-const CustomCard: FC<Props> = (Props) => {
-  const { result, type } = Props;
+const CustomCard: FC<Props> = ({ result, type }) => {
+  debugger;
   return (
     <Card
       hoverable={true}
       style={{ width: "100%" }}
-      actions={[<GithubOutlined key="url" />, <LinkOutlined key="ellipsis" />]}
+      // actions={[<GithubOutlined key="url" />, <LinkOutlined key="ellipsis" />]}
     >
       <Meta
         avatar={
